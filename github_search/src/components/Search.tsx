@@ -1,6 +1,14 @@
+type SearchProps = {
+  loadUser: (userName: string) => Promise<void>;
+};
+
+import { useState } from 'react';
+
 import { BsSearch } from 'react-icons/bs'
 
-const Search = () => {
+const Search = ({loadUser}: SearchProps) => {
+  const [userName, setUserName] = useState("");
+
   return (
     <div>
       <h2>Busque por usuário</h2>
