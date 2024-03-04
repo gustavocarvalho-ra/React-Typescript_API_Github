@@ -23,11 +23,12 @@ const Home = () => {
       return;
     }
 
-    const {avatar_url, login, location, followers, following} = data
+    const {avatar_url, login, id, location, followers, following} = data
 
     const userData: UserProps = {
       avatar_url,
       login,
+      id,
       location,
       followers,
       following,
