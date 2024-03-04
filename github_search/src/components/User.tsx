@@ -20,19 +20,19 @@ const User = ({
       <h2>{login}</h2>
       <h2>Id: {id}</h2>
       {location && (
-        <p>
+        <p className={classes.location}>
           <MdLocationPin />
           <span>{location}</span>
         </p>
       )}
-      <div>
+      <div className={classes.stats}>
         <div>
           <p>Seguidores:</p>
-          <p>{followers}</p>
+          <p className={classes.number}>{followers}</p>
         </div>
         <div>
           <p>Seguindo:</p>
-          <p>{following}</p>
+          <p className={classes.number}>{following}</p>
         </div>
       </div>
       <Link to={`/repos/${login}`}>Ver melhores projetos</Link>

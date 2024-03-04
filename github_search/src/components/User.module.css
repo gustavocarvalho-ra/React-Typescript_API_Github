@@ -15,3 +15,29 @@
   border: 4px solid #644aff;
   border-radius: 50%;
 }
+
+.location {
+  display: flex;
+  align-items: center;
+  gap: .4rem;
+}
+
+.location svg {
+  fill: #644aff;
+  font-size: 1.5rem;
+}
+
+.location span {
+  color: #9da5d1;
+  font-weight: bold;
+}
+
+.stats {
+  display: flex;
+}
+
+.stats div {
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: column;
+}
