@@ -24,4 +24,10 @@
   padding: .6rem;
   border-radius: 3px;
   border: none;
+  color: #2b3566;
+}
+
+.search_container button {
+  background-color: #0e1129;
+  cursor: pointer;
 }
