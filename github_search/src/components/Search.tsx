@@ -12,7 +12,8 @@ const Search = ({loadUser}: SearchProps) => {
   const [userName, setUserName] = useState("");
 
   const handleKeyDown = (e: KeyboardEvent) => {
-    if(e.key ==="Enter") {
+    if(e.key === "Enter") {
+      loadUser(userName);
     }
 
   }
