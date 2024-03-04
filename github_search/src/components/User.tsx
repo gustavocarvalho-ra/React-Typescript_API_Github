@@ -10,7 +10,6 @@ const User = ({
   followers, 
   following, 
   location, 
-  starred_url,
 }: UserProps) => {
   return (
     <div>
@@ -28,10 +27,6 @@ const User = ({
         <div>
           <p>Seguindo:</p>
           <p>{following}</p>
-        </div>
-        <div>
-          <p>Estrelas:</p>
-          <p>{starred_url}</p>
         </div>
       </div>
       <Link to={`/repos/${login}`}>Ver melhores projetos</Link>

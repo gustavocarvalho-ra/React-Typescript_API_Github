@@ -13,7 +13,7 @@ const Home = () => {
 
     const data = await res.json();
 
-    const {avatar_url, login, location, followers, following, starred_url} = data
+    const {avatar_url, login, location, followers, following} = data
 
     const userData: UserProps = {
       avatar_url,
@@ -21,7 +21,6 @@ const Home = () => {
       location,
       followers,
       following,
-      starred_url,
     };
 
     setUser(userData);
