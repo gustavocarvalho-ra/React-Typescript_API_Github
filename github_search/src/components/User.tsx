@@ -18,7 +18,7 @@ const User = ({
     <div className={classes.user}>
       <img src={avatar_url} alt={login} />
       <h2>{login}</h2>
-      <h2>Id: {id}</h2>
+      <h3>Id: {id}</h3>
       {location && (
         <p className={classes.location}>
           <MdLocationPin />
